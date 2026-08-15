@@ -1,0 +1,59 @@
+Altium Designer Pick and Place Locations
+G:\My Drive\Progetti\PiggySat\PiggySat-board\Project Outputs for PiggySat-board\Pick Place\Pick Place for PiggySat-board.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       15/08/26
+Time:       18:18
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mil
+
+Designator Comment             Layer       Footprint                       Center-X(mil) Center-Y(mil) Rotation Description                                                                                                               
+S1         F8-8-5-0.4Z         TopLayer    F8-8-5-0.4Z                     0.000         -1574.803     90       "Capacitive Touch Contact Spring, Conical Ø8/Ø5 mm, 8 mm Height, Ø0.4 mm Wire, 3 mm THT Lead, Nickel-Plated Carbon Steel" 
+U3         TTP223-CA6          TopLayer    SOT-23-6L                       239.862       -1574.803     0        "1 KEY TOUCH PAD DETECTOR IC"                                                                                             
+C16        100n                TopLayer    CAPC1608X06L                    342.992       -1548.228     90       "Cap 16V 100n X7R 0603 10%"                                                                                               
+C13        100n                TopLayer    CAPC1608X06L                    152.559       -290.000      180      "Cap 16V 100n X7R 0603 10%"                                                                                               
+J6         693041010711        TopLayer    693041010711                    688.976       -1465.748     0        ""                                                                                                                        
+R10        100R                TopLayer    RESC1005X04L                    82.598        -209.685      270      "Res 100R 0402"                                                                                                           
+Q1         DMP2123L-7          TopLayer    FP-SOT23-MFG                    120.000       -102.756      90       "DMP2123L-7 P-Channel 20 V 72 mO Surface Mount Enhancement Mode Mosfet - SOT-23"                                          
+FS1        MF-PSMF010X-2       TopLayer    FP-MF-PSMF-MFG                  0.000         -106.693      270      "PTC RESET FUSE 15V 100MA 0805"                                                                                           
+BT1        "Keystone 1095"     BottomLayer KEYSTONE_1095                   0.000         -1023.622     90       "THM Holder for 18350 Battery P/N 1095"                                                                                   
+J3         MMT-103-01-SM-SH-TR BottomLayer MMT-103-01-SM-SH-TR             354.331       -78.740       180      "MMT Series 2.00 mm Horizontal Surface Mount Terminal Strip"                                                              
+J2         73415-5740          BottomLayer MOLEX_734155740                 649.606       -267.500      270      "SMP PLUG, PCB EDGE MNT, SMOOTH B"                                                                                        
+J1         73415-5740          BottomLayer MOLEX_734155740                 -649.606      -267.500      270      "SMP PLUG, PCB EDGE MNT, SMOOTH B"                                                                                        
+R5         47                  TopLayer    RESC1005X04L                    548.819       -1120.315     90       "Res 47 0402"                                                                                                             
+R3         47                  TopLayer    RESC1005X04L                    598.819       -1120.315     270      "Res 47 0402"                                                                                                             
+R1         4k7                 TopLayer    RESC1005X04L                    -708.661      -610.866      270      "Res 4.7k 0402"                                                                                                           
+D1         SML-D12D8WT86C      TopLayer    SML-D12                         -708.661      -708.661      0        "LED, 0603, Orange, SMD, 0,8mm x 1,6mm, 20 mA, 2.2 V, 620 nm"                                                             
+C2         100n                TopLayer    CAPC1608X06L                    698.819       -1113.425     270      "Cap 16V 100n X7R 0603 10%"                                                                                               
+U1         NRF9151-LACA-R      TopLayer    FP-nRF9151-LACA-R_MFG           0.000         -944.882      180      "Lower Power SIP for cellular IoT and DECT NR+, Compatible with nRF Cloud Services"                                       
+U2         ADP160AUJZ-3.0-R7   TopLayer    FP-UJ-5-IPC_A                   -5.287        -397.402      180      "IC REG LINEAR 3V 150MA TSOT5"                                                                                            
+SW1        EVQP2402W           TopLayer    EVQP2402W                       -551.181      -1850.394     90       "Light Touch Switches/EVQP2/P9/3P2"                                                                                       
+R7         47                  TopLayer    RESC1005X04L                    498.819       -1120.315     270      "Res 47 0402"                                                                                                             
+R8         470                 TopLayer    RESC1005X04L                    -826.772      -610.866      270      "Res 470 0402"                                                                                                            
+R4         4k7                 TopLayer    RESC1005X04L                    -590.000      -610.315      270      "Res 4.7k 0402"                                                                                                           
+R2         10k                 TopLayer    RESC1005X04L                    314.606       -990.000      180      "Res 10k 0402"                                                                                                            
+R6         1k                  TopLayer    RESC1005X04L                    -449.803      -1730.315     90       "Res 1k 0402"                                                                                                             
+J5         TC2030              TopLayer    TC2030-IDC                      807.087       -787.402      270      "Serial cable 6-pin “Legged” Tag-Connector."                                                                              
+FD3        Fiducial_1mm        TopLayer    Fiducial_1mm-Footprint-1        -2944.252     -4373.504     90       "1mm fiducial marker"                                                                                                     
+FD2        Fiducial_1mm        TopLayer    Fiducial_1mm-Footprint-1        -2944.252     -4373.504     90       "1mm fiducial marker"                                                                                                     
+FD1        Fiducial_1mm        TopLayer    Fiducial_1mm-Footprint-1        -2944.252     -4373.504     0        "1mm fiducial marker"                                                                                                     
+FB2        BLM21PG121SN1D      TopLayer    FP-BLM21-0_2-t0_85-e0_5-d-IPC_C -136.837      -1340.000     180      "Chip Ferrite Bead, 0805, 120O @ 100MHz, 0.03O, 25%, 3A"                                                                  
+FB1        BLM21PG121SN1D      TopLayer    FP-BLM21-0_2-t0_85-e0_5-d-IPC_C 500.000       -847.415      90       "Chip Ferrite Bead, 0805, 120O @ 100MHz, 0.03O, 25%, 3A"                                                                  
+D3         SML-D12P8WT86C      TopLayer    SML-D12                         -826.772      -708.661      0        "LED, 0603, Green, SMD, 0,8mm x 1,6mm, 20 mA, 2.2 V, 560 nm"                                                              
+D2         SML-D12U8WT86C      TopLayer    SML-D12                         -590.551      -708.661      0        "LED, 0603, Red, SMD, 0,8mm x 1,6mm, 20 mA, 2.2 V, 620 nm"                                                                
+C12        10u                 TopLayer    CAPC1608X06L                    152.559       -360.000      180      "Cap 16V 10u X7R 0603 10%"                                                                                                
+C11        ECASD40J107M015K00  TopLayer    FP-ECAS-D4-MFG                  500.000       -561.890      90       "Polymer Aluminum Electrolytic Capacitor 2917 100uF±20% 6.3V 15mO"                                                        
+C8         10u                 TopLayer    CAPC1608X06L                    -166.575      -360.000      0        "Cap 16V 10u X7R 0603 10%"                                                                                                
+C7         100n                TopLayer    CAPC1608X06L                    -166.575      -434.803      0        "Cap 16V 100n X7R 0603 10%"                                                                                               
+C14        1u                  TopLayer    CAPC1608X06L                    152.795       -434.803      180      "Cap 16V 1u X7R 0603 10%"                                                                                                 
+C1         100n                TopLayer    CAPC1608X06L                    321.496       -935.039      0        "Cap 16V 100n X7R 0603 10%"                                                                                               
+C3         100n                TopLayer    CAPC1608X06L                    321.496       -1040.000     180      "Cap 16V 100n X7R 0603 10%"                                                                                               
+C15        4u7                 TopLayer    CAPC1608X06L                    127.953       -653.425      270      "Cap 16V 4.7u X7R 0603 10%"                                                                                               
+C10        4u7                 TopLayer    CAPC1608X06L                    -134.843      -1270.000     0        "Cap 16V 4.7u X7R 0603 10%"                                                                                               
+C9         100n                TopLayer    CAPC1608X06L                    -134.843      -1220.000     0        "Cap 16V 100n X7R 0603 10%"                                                                                               
+C6         47u                 TopLayer    CAPC2012X11L                    420.000       -846.457      270      "Cap 16V 47u X7R 0603 10%"                                                                                                
+C5         100n                TopLayer    CAPC1608X06L                    350.000       -849.409      270      "Cap 16V 100n X7R 0603 10%"                                                                                               
+C4         15p                 TopLayer    CAPC1608X06L                    294.921       -849.409      270      "Cap 16V 15p X7R 0603 10%"                                                                                                

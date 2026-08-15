@@ -1,0 +1,153 @@
+# PiggySat
+
+![PiggySat logo](Logo/piggysat.png)
+
+[![License: CERN-OHL-P-2.0](https://img.shields.io/badge/license-CERN--OHL--P--2.0-blue.svg)](LICENSE)
+![Release: v1.0.0](https://img.shields.io/badge/release-v1.0.0-brightgreen.svg)
+
+PiggySat is an emergency communicator that determines its position using GNSS and exchanges data through an LTE NB-IoT satellite link. A Nordic Semiconductor nRF9151 provides both GNSS positioning and bidirectional NB-IoT NTN communications.
+
+The hardware is built as an Altium Designer multi-board assembly. It combines a compact nRF9151 radio and power board with a separate four-layer antenna board and includes the mechanical assembly, reusable component libraries, and a PCB panel project.
+
+The design is under active development. Review the schematics, design-rule reports, component availability, RF constraints, and manufacturing data before building hardware.
+
+## Purpose and architecture
+
+- **Emergency communication** — designed to exchange essential data when terrestrial connectivity is unavailable.
+- **Location** — the nRF9151 GNSS receiver determines the communicator's position.
+- **Satellite data link** — the nRF9151 uses LTE NB-IoT NTN for transmitting and receiving data over satellite.
+- **Integrated cellular IoT SiP** — a single nRF9151 handles both positioning and communication functions.
+- **Simple user interface** — one touch button and three status LEDs provide direct control and visual feedback.
+- **Rugged enclosure** — designed for an IP68 submersible housing suitable for emergency use in wet and exposed environments.
+- **Multi-board construction** — the main electronics and antenna are implemented as separate PCBs and validated together in the Altium multi-board assembly.
+
+## Project layout
+
+| Path | Description |
+| --- | --- |
+| `PiggySat.PrjMbd` | Top-level Altium multi-board project |
+| `PiggySat.MbsDoc` | Multi-board schematic |
+| `PiggySat.MbaDoc` | Multi-board assembly |
+| `PiggySat.OutJob` | Multi-board output job |
+| `Project Outputs for PiggySat/MBAExportSTEP/PiggySat.step` | Exported 3D model of the assembly |
+| `PiggySat-board/` | Main radio and power PCB project |
+| `PiggySat-antenna/` | Antenna schematic, PCB, output job, BOM, and fabrication outputs |
+| `PiggySat-lib/` | Project schematic and PCB libraries, plus the compiled integrated library |
+| `PiggySat-panel/` | Separate PCB panelization project |
+| `Mechanical/` | IP68 housing design in Fusion 360 archive and STEP formats |
+| `Logo/` | Project artwork |
+| `Resources/` | Local-only 3D models, datasheets, and footprint-related resources; excluded from Git |
+
+## Hardware projects
+
+### Main board
+
+Open `PiggySat-board/PiggySat-board.PrjPcb` in Altium Designer. Its source documents are:
+
+- `PiggySat-radio.SchDoc` — radio section
+- `PiggySat-power.SchDoc` — power section
+- `PiggySat-board.PcbDoc` — four-layer PCB layout
+- `4layer-1oz-jlc7628-1.6mm.stackup` — 1.6 mm, four-layer fabrication stack-up
+- `4layer-1oz.RUL` — PCB design rules
+
+The `Datasheets` directory contains component and antenna documentation used while developing the board. The `Ref` directory contains third-party Nordic Semiconductor reference hardware; see [Third-party material](#third-party-material) before redistributing it.
+
+The main-board output job generates Gerber and NC drill data, BOM, pick-and-place data, PDF documentation, STEP data, a PCB image, and validation reports.
+
+### Antenna board
+
+Open `PiggySat-antenna/PiggySat-antenna.PrjPcb`. This project contains its own schematic, four-layer PCB, stack-up, rules, and output job.
+
+The routed RF network includes phase/delay constraints for the `0DEG`, `90DEG`, `180DEG`, and `270DEG` nets. Preserve these constraints when changing the antenna feed network or stack-up.
+
+Generated fabrication data currently includes:
+
+- Gerber layers
+- NC drill data
+- bill of materials
+- pick-and-place data
+- PDF documentation
+- STEP data
+- a PCB image
+- design-rule reports
+
+Treat generated outputs as snapshots: regenerate and verify them from the matching source revision before ordering boards.
+
+### Component library
+
+Open `PiggySat-lib/PiggySat.LibPkg` to edit or compile the project library. It contains:
+
+- `PiggySat.SchLib` — schematic symbols
+- `PiggySat.PcbLib` — footprints and component models
+- `Project Outputs for PiggySat/PiggySat.IntLib` — compiled integrated library
+
+If Altium reports a missing `PiggySat.IntLib` while opening another project, install or relink the compiled library from this directory, then confirm that every schematic component resolves to the intended symbol and footprint.
+
+### Panel, housing, and mechanical assembly
+
+`PiggySat-panel/PiggySat-panel.PrjPcb` contains the panel PCB document. Verify embedded-board links, tooling holes, rails, fiducials, breakaway features, and the fabricator's panel requirements before generating production data.
+
+The `Mechanical` directory contains the device housing:
+
+- `PiggySat_housing.f3z` — Fusion 360 design archive
+- `PiggySat_housing.step` — neutral 3D exchange model
+
+The enclosure is designed to support an IP68 submersible implementation. The final ingress-protection rating depends on materials, seals, manufacturing tolerances, assembly, and validation testing; the design files alone do not constitute IP68 certification.
+
+Open `PiggySat.PrjMbd` to inspect the relationship between the main board and antenna board. `Project Outputs for PiggySat/MBAExportSTEP/PiggySat.step` is a convenient mechanical preview, but the Altium multi-board documents remain the editable source of truth.
+
+## Requirements
+
+- Altium Designer with support for PCB, library, and multi-board documents
+- A Gerber/NC viewer independent of Altium for fabrication-output verification
+- Access to the component datasheets and the intended PCB manufacturer's current capabilities
+
+The exact Altium Designer release used to create the project has not yet been recorded. Before committing edits, open the project in the intended team version and check whether Altium proposes a document-format upgrade.
+
+## Recommended workflow
+
+1. Compile `PiggySat-lib/PiggySat.LibPkg` and install or relink the resulting integrated library if required.
+2. Open and compile the main-board and antenna projects independently.
+3. Review ERC/compile messages and run a fresh PCB design-rule check on both boards.
+4. Confirm the controlled-impedance stack-up with the selected fabricator before changing RF geometry.
+5. Open the multi-board project and check clearances, connectors, orientation, and mechanical alignment.
+6. Review the panel project against the fabricator's panelization rules.
+7. Regenerate fabrication and assembly outputs from a clean, tagged source revision.
+8. Inspect Gerbers, drill files, BOM, and placement data with independent tools before release.
+
+## Design status
+
+Version `1.0.0` is the first release of the PiggySat hardware project. See [CHANGELOG.md](CHANGELOG.md) for its contents and known limitations.
+
+The current work-in-progress DRC reports record 291 violations on the main board and 225 on the antenna board, with no waived violations. These include silkscreen-to-solder-mask and board-clearance findings. Each item should be reviewed and either corrected or formally waived before declaring a production-ready release.
+
+The presence of fabrication outputs does not by itself demonstrate production readiness. RF, GNSS, satellite-link, power, environmental, ingress-protection, and regulatory validation remain the responsibility of the builder.
+
+## Version-control policy
+
+Editable Altium source files, stack-ups, rules, libraries, and deliberate release artifacts belong in version control. Local history, previews, ECO logs, temporary exports, and editor lock files do not.
+
+The included `.gitignore` filters common Altium working files while leaving the existing manufacturing-output directories available for deliberate versioning. For traceable fabrication releases, consider attaching a verified output archive to a Git tag or GitHub Release.
+
+Because Altium documents are mostly binary, keep commits small and explain schematic, layout, library, and output changes in commit messages. Avoid editing the same binary document concurrently on multiple branches.
+
+## Third-party material
+
+`PiggySat-board/Ref` includes Nordic Semiconductor development-kit and Thingy:91 X reference files. Those directories contain their own `License.txt` and legal-disclaimer documents. Their terms apply independently of any license selected for PiggySat.
+
+Before publishing the repository, decide whether these reference files need to be distributed at all. If retained, keep their original notices intact and document any modifications separately.
+
+Component datasheets and vendor documents may also have redistribution restrictions. Linking to the original vendor pages is generally preferable for a public repository.
+
+## License
+
+The original PiggySat hardware design files are licensed under the [CERN Open Hardware Licence Version 2 - Permissive](LICENSE), SPDX identifier `CERN-OHL-P-2.0`.
+
+Copies, modifications, manufactured products, and redistributed versions must retain the applicable notices and credit the original work as:
+
+> PiggySat — original hardware design by the PiggySat authors and contributors
+
+See [NOTICE](NOTICE) for the attribution requirements. Modified versions must also identify that they were changed, with the date and a brief description. Third-party files remain governed by their respective licenses and notices.
+## Authors
+
+PiggySat was originally authored by **Marco Barbetta**. See [AUTHORS.md](AUTHORS.md) for authorship and contributor information.

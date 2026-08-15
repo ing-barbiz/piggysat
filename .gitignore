@@ -1,0 +1,36 @@
+# Altium local history and previews
+History/
+**/History/
+__Previews/
+**/__Previews/
+
+# Altium project logs and temporary working data
+Project Logs for */
+**/Project Logs for */
+Tmp/
+**/Tmp/
+Resources/
+**/Resources/
+*.LOG
+*.log
+*.SchDocPreview
+*.PcbDocPreview
+*.PrjPcbStructure
+*.PrjPCBStructure
+*.PrjMbdStructure
+
+# Altium lock, recovery, and user-state files
+~$*
+*.~*
+*.DsnWrk
+*.DsnWrk.user
+*.PrjPcb.user
+*.PrjMbd.user
+*.suo
+*.user
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+

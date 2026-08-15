@@ -1,0 +1,15 @@
+PiggySat Open Hardware Notice
+
+Copyright © 2026 the original PiggySat authors and contributors.
+
+The original PiggySat hardware design files are made available under the CERN Open Hardware Licence Version 2 - Permissive (CERN-OHL-P-2.0). See LICENSE.
+
+Attribution requirement
+
+When copying, modifying, publishing, manufacturing, or distributing the original PiggySat design or a product based on it, retain this Notice and give appropriate credit to:
+
+    PiggySat — original hardware design by the PiggySat authors and contributors
+
+Include the project name, identify the original authors collectively as shown above, reference the source repository when available, and state whether the design was modified. Do not imply endorsement by the original authors.
+
+Third-party files, including material under PiggySat-board/Ref and vendor datasheets, remain subject to their own copyright, licence, and notice terms.

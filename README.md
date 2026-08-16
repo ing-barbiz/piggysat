@@ -1,6 +1,6 @@
 # PiggySat
 
-![PiggySat logo](Logo/piggysat.png)
+<img src="Logo/piggysat.png" alt="PiggySat logo" width="180">
 
 [![License: CERN-OHL-P-2.0](https://img.shields.io/badge/license-CERN--OHL--P--2.0-blue.svg)](LICENSE)
 ![Release: v1.0.0](https://img.shields.io/badge/release-v1.0.0-brightgreen.svg)

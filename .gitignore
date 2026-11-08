@@ -1,36 +1,55 @@
-# Altium local history and previews
-History/
+# ---------------------------------------------------------------------------
+# Altium Designer
+# ---------------------------------------------------------------------------
+
+# Local history and previews
 **/History/
-__Previews/
 **/__Previews/
 
-# Altium project logs and temporary working data
-Project Logs for */
+# Project logs and temporary working data
 **/Project Logs for */
-Tmp/
 **/Tmp/
-Resources/
 **/Resources/
-*.LOG
 *.log
 *.SchDocPreview
 *.PcbDocPreview
 *.PrjPcbStructure
-*.PrjPCBStructure
 *.PrjMbdStructure
 
-# Altium lock, recovery, and user-state files
+# Lock, recovery and user-state files
 ~$*
 *.~*
 *.DsnWrk
 *.DsnWrk.user
-*.PrjPcb.user
-*.PrjMbd.user
-*.suo
 *.user
+*.suo
+*.bak
 
-# Operating-system metadata
+# Generated outputs (recreate them by running the OutJobs)
+**/Project Outputs for */
+
+# ---------------------------------------------------------------------------
+# Tools (Python)
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# ---------------------------------------------------------------------------
+# Editors
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+
+# ---------------------------------------------------------------------------
+# Operating system and Google Drive sync
+# ---------------------------------------------------------------------------
 .DS_Store
 Thumbs.db
-Desktop.ini
-
+[Dd]esktop.ini
+*.tmp
+.tmp.drivedownload/
+.tmp.driveupload/

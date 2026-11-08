@@ -124,7 +124,7 @@ Configuration4_Name1=OutputConfigurationParameter1
 Configuration4_Item1=Record=Pcb3DPrintView|ResX=300|ResY=300|ViewX=20472440|ViewY=20472440|LookAtX=39700000|LookAtY=31150000|LookAtZ=0|UpX=0|UpY=1|UpZ=0|FOV=0|QuatX=0|QuatY=0|QuatZ=0|QuatW=1|Zoom=1.77311546645148E-5|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=False|ViewFromTop=True|ScreenWidth=0|ScreenHeight=0|ImageOutputType=1|ViewConfig= |DocumentPath=G:\My Drive\Progetti\PiggySat\PiggySat-antenna\PiggySat-antenna.PcbDoc
 
 [PublishSettings]
-OutputFilePath2=
+OutputFilePath2=G:\My Drive\Progetti\PiggySat\PiggySat-board\Project Outputs for PiggySat-board\PiggySat-antenna.PDF
 ReleaseManaged2=1
 OutputBasePath2=Project Outputs for PiggySat-board
 OutputPathMedia2=
@@ -132,9 +132,9 @@ OutputPathMediaValue2=
 OutputPathOutputer2=[Output Type]
 OutputPathOutputerPrefix2=
 OutputPathOutputerValue2=
-OutputFileName2=PiggySat-antenna.PDF
+OutputFileName2=PiggySat-board.PDF
 OutputFileNameMulti2=
-UseOutputNameForMulti2=1
+UseOutputNameForMulti2=0
 OutputFileNameSpecial2=
 OpenOutput2=1
 PromptOverwrite2=1
@@ -166,7 +166,7 @@ OutputFileNameSpecial3=
 OpenOutput3=1
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=
+RelativeOutputPath2=G:\My Drive\Progetti\PiggySat\PiggySat-board\Project Outputs for PiggySat-board\PiggySat-antenna.PDF
 OpenOutputs2=1
 RelativeOutputPath3=G:\My Drive\Progetti\PiggySat\PiggySat-antenna\Project Outputs for PiggySat-antenna\
 OpenOutputs3=1

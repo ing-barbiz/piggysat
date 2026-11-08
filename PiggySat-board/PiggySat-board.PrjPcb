@@ -139,86 +139,90 @@ DocumentPath=Project Outputs for PiggySat-board\BOM\Bill of Materials-PiggySat-b
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for PiggySat\Design Rule Check - PiggySat.html
+DocumentPath=Project Outputs for PiggySat-board\Design Rule Check - PiggySat-board.html
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for PiggySat-board\Pick Place\Pick Place for PiggySat-board.txt
+DocumentPath=Project Outputs for PiggySat\Design Rule Check - PiggySat.html
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for PiggySat-board\NC Drill\PiggySat-board.DRR
+DocumentPath=Project Outputs for PiggySat-board\Pick Place\Pick Place for PiggySat-board.txt
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.EXTREP
+DocumentPath=Project Outputs for PiggySat-board\NC Drill\PiggySat-board.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.GBL
+DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.GBO
+DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.GBP
+DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.GBS
+DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.GKO
+DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.GM
+DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.GKO
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.GP1
+DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.GM
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.GP2
+DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.GP1
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.GTL
+DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.GP2
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.GTO
+DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.GTP
+DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.GTS
+DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Project Outputs for PiggySat-board\NC Drill\PiggySat-board.LDP
+DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=Project Outputs for PiggySat-board\PCB 3D Print\PiggySat-board.png
+DocumentPath=Project Outputs for PiggySat-board\NC Drill\PiggySat-board.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.REP
+DocumentPath=Project Outputs for PiggySat-board\PCB 3D Print\PiggySat-board.png
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=Project Outputs for PiggySat-board\ExportSTEP\PiggySat-board.step
+DocumentPath=Project Outputs for PiggySat-board\Gerber\PiggySat-board.REP
 DItemRevisionGUID=
 
 [GeneratedDocument22]
+DocumentPath=Project Outputs for PiggySat-board\ExportSTEP\PiggySat-board.step
+DItemRevisionGUID=
+
+[GeneratedDocument23]
 DocumentPath=Project Outputs for PiggySat-board\NC Drill\PiggySat-board.TXT
 DItemRevisionGUID=
 

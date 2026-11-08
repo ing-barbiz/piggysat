@@ -94,6 +94,10 @@ The compiled `PiggySat.IntLib` is not versioned. If Altium reports it missing wh
 
 Open `PiggySat-panel/PiggySat-panel.PrjPcb`. It contains `PiggySat-panel.PcbDoc` and `PiggySat-panel.OutJob`, which generates the production Gerber, NC drill, and pick-and-place data. Verify embedded-board links, tooling holes, rails, fiducials, breakaway features, and the fabricator's panel requirements before generating production data.
 
+The panel holds one antenna board and one main board, rev. 1.0.0, held in the frame by breakaway tabs, with tooling holes and fiducials on the rails.
+
+![PiggySat panel with the antenna board and the main board](Pictures/panel.png)
+
 ### Multi-board assembly
 
 Open `PiggySat.PrjMbd` to inspect the relationship between the main board and antenna board through `PiggySat.MbsDoc` and `PiggySat.MbaDoc`. `PiggySat.OutJob` exports a STEP model of the full assembly for mechanical preview.

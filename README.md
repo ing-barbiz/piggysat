@@ -37,7 +37,7 @@ The design is under active development. Review the schematics, design-rule repor
 | `PiggySat-panel/` | Separate PCB panelization project |
 | `Mechanical/` | IP68 housing design in Fusion 360 archive and STEP formats |
 | `Measurements/` | VNA S11 measurements of the antenna (Touchstone `.s1p`), with the calibration and instrument setup used |
-| `Simulations/` | QucsStudio matching-network simulations and their results |
+| `Simulations/` | uSimmics matching-network simulations and their results |
 | `Logo/` | Project artwork |
 | `Resources/` | Local-only 3D models, datasheets, and footprint-related resources; excluded from Git |
 
@@ -65,7 +65,7 @@ The routed RF network includes phase/delay constraints for the `0DEG`, `90DEG`, 
 
 `PiggySat-antenna.OutJob` generates a BOM, PDF documentation, STEP data, a PCB image, and design-rule reports.
 
-Measured S11 data for the antenna and its matching network is in `Measurements/`, and the corresponding QucsStudio models are in `Simulations/`. The `.s1p` files are 50 Ω Touchstone data and can be opened in any RF tool or compared against the simulations.
+Measured S11 data for the antenna and its matching network is in `Measurements/`, and the corresponding uSimmics models are in `Simulations/`. The `.s1p` files are 50 Ω Touchstone data and can be opened in any RF tool or compared against the simulations.
 
 ### Component library
 

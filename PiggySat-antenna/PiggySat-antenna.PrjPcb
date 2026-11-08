@@ -114,146 +114,154 @@ Variation4=Designator=C14|UniqueId=\QBGBIACC|Kind=1|AlternatePart=
 ParamVariationCount=0
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for PiggySat-antenna\Design Rule Check - PiggySat-antenna.html
+DocumentPath=Project Outputs for PiggySat-antenna\BOM\Bill of Materials-PiggySat-antenna(Default).xlsx
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for PiggySat-antenna\Pick Place\Pick Place for PiggySat-antenna.txt
+DocumentPath=Project Outputs for PiggySat-antenna\Design Rule Check - PiggySat-antenna.html
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for Free Documents\NC Drill\PiggySat-antenna.DRR
+DocumentPath=Project Outputs for PiggySat-antenna\Pick Place\Pick Place for PiggySat-antenna.txt
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for PiggySat-antenna\NC Drill\PiggySat-antenna.DRR
+DocumentPath=Project Outputs for Free Documents\NC Drill\PiggySat-antenna.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.EXTREP
+DocumentPath=Project Outputs for PiggySat-antenna\NC Drill\PiggySat-antenna.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.EXTREP
+DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.GBL
+DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.GBL
+DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.GBO
+DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.GBO
+DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.GBP
+DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.GBP
+DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.GBS
+DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.GBS
+DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.GKO
+DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.GKO
+DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.GKO
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.GM
+DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.GKO
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.GM
+DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.GM
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.GP1
+DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.GM
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.GP1
+DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.GP1
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.GP2
+DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.GP1
 DItemRevisionGUID=
 
 [GeneratedDocument22]
-DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.GP2
+DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.GP2
 DItemRevisionGUID=
 
 [GeneratedDocument23]
-DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.GTL
+DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.GP2
 DItemRevisionGUID=
 
 [GeneratedDocument24]
-DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.GTL
+DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument25]
-DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.GTO
+DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument26]
-DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.GTO
+DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument27]
-DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.GTP
+DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument28]
-DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.GTP
+DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument29]
-DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.GTS
+DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument30]
-DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.GTS
+DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument31]
-DocumentPath=Project Outputs for Free Documents\NC Drill\PiggySat-antenna.LDP
+DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument32]
-DocumentPath=Project Outputs for PiggySat-antenna\NC Drill\PiggySat-antenna.LDP
+DocumentPath=Project Outputs for Free Documents\NC Drill\PiggySat-antenna.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument33]
-DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.REP
+DocumentPath=Project Outputs for PiggySat-antenna\NC Drill\PiggySat-antenna.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument34]
-DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.REP
+DocumentPath=Project Outputs for PiggySat-antenna\PiggySat-antenna.NET
 DItemRevisionGUID=
 
 [GeneratedDocument35]
-DocumentPath=Project Outputs for Free Documents\NC Drill\PiggySat-antenna.TXT
+DocumentPath=Project Outputs for Free Documents\Gerber\PiggySat-antenna.REP
 DItemRevisionGUID=
 
 [GeneratedDocument36]
+DocumentPath=Project Outputs for PiggySat-antenna\Gerber\PiggySat-antenna.REP
+DItemRevisionGUID=
+
+[GeneratedDocument37]
+DocumentPath=Project Outputs for Free Documents\NC Drill\PiggySat-antenna.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument38]
 DocumentPath=Project Outputs for PiggySat-antenna\NC Drill\PiggySat-antenna.TXT
 DItemRevisionGUID=
 
@@ -277,48 +285,52 @@ OutputName1=Cadnetix Netlist
 OutputDocumentPath1=
 OutputVariantName1=
 OutputDefault1=0
-OutputType2=CalayNetlist
-OutputName2=Calay Netlist
+OutputType2=TelesisNetlist
+OutputName2=Telesis Netlist
 OutputDocumentPath2=
 OutputVariantName2=
 OutputDefault2=0
-OutputType3=EDIF
-OutputName3=EDIF for PCB
+OutputType3=TangoNetlist
+OutputName3=Tango Netlist
 OutputDocumentPath3=
 OutputVariantName3=
 OutputDefault3=0
-OutputType4=EESofNetlist
-OutputName4=EESof Netlist
+OutputType4=SciCardsNetlist
+OutputName4=SciCards Netlist
 OutputDocumentPath4=
 OutputVariantName4=
 OutputDefault4=0
-OutputType5=IntergraphNetlist
-OutputName5=Intergraph Netlist
+OutputType5=RINFNetlist
+OutputName5=RINF Netlist
 OutputDocumentPath5=
 OutputVariantName5=
 OutputDefault5=0
-OutputType6=MentorBoardStationNetlist
-OutputName6=Mentor BoardStation Netlist
+OutputType6=RacalNetlist
+OutputName6=Racal Netlist
 OutputDocumentPath6=
 OutputVariantName6=
 OutputDefault6=0
-OutputType7=MultiWire
-OutputName7=MultiWire
+OutputType7=ProtelNetlist
+OutputName7=Protel
 OutputDocumentPath7=
 OutputVariantName7=
 OutputDefault7=0
-OutputType8=OrCadPCB2Netlist
-OutputName8=Orcad/PCB2 Netlist
+Configuration7_Name1=ForceUpdateSettings
+Configuration7_Item1=False
+Configuration7_Name2=OutputConfigurationParameter1
+Configuration7_Item2=NetlistVersion=0|Record=ProtelNetlistView|DocumentPath=[Project]
+OutputType8=Protel2Netlist
+OutputName8=Protel2 Netlist
 OutputDocumentPath8=
 OutputVariantName8=
 OutputDefault8=0
-OutputType9=PADSNetlist
-OutputName9=PADS ASCII Netlist
+OutputType9=PCADnltNetlist
+OutputName9=PCADnlt Netlist
 OutputDocumentPath9=
 OutputVariantName9=
 OutputDefault9=0
-OutputType10=Pcad
-OutputName10=Pcad for PCB
+OutputType10=WireListNetlist
+OutputName10=WireList Netlist
 OutputDocumentPath10=
 OutputVariantName10=
 OutputDefault10=0
@@ -327,48 +339,48 @@ OutputName11=PCAD Netlist
 OutputDocumentPath11=
 OutputVariantName11=
 OutputDefault11=0
-OutputType12=PCADnltNetlist
-OutputName12=PCADnlt Netlist
+OutputType12=PADSNetlist
+OutputName12=PADS ASCII Netlist
 OutputDocumentPath12=
 OutputVariantName12=
 OutputDefault12=0
-OutputType13=Protel2Netlist
-OutputName13=Protel2 Netlist
+OutputType13=OrCadPCB2Netlist
+OutputName13=Orcad/PCB2 Netlist
 OutputDocumentPath13=
 OutputVariantName13=
 OutputDefault13=0
-OutputType14=ProtelNetlist
-OutputName14=Protel
+OutputType14=MultiWire
+OutputName14=MultiWire
 OutputDocumentPath14=
 OutputVariantName14=
 OutputDefault14=0
-OutputType15=RacalNetlist
-OutputName15=Racal Netlist
+OutputType15=MentorBoardStationNetlist
+OutputName15=Mentor BoardStation Netlist
 OutputDocumentPath15=
 OutputVariantName15=
 OutputDefault15=0
-OutputType16=RINFNetlist
-OutputName16=RINF Netlist
+OutputType16=IntergraphNetlist
+OutputName16=Intergraph Netlist
 OutputDocumentPath16=
 OutputVariantName16=
 OutputDefault16=0
-OutputType17=SciCardsNetlist
-OutputName17=SciCards Netlist
+OutputType17=EESofNetlist
+OutputName17=EESof Netlist
 OutputDocumentPath17=
 OutputVariantName17=
 OutputDefault17=0
-OutputType18=TangoNetlist
-OutputName18=Tango Netlist
+OutputType18=EDIF
+OutputName18=EDIF for PCB
 OutputDocumentPath18=
 OutputVariantName18=
 OutputDefault18=0
-OutputType19=TelesisNetlist
-OutputName19=Telesis Netlist
+OutputType19=CalayNetlist
+OutputName19=Calay Netlist
 OutputDocumentPath19=
 OutputVariantName19=
 OutputDefault19=0
-OutputType20=WireListNetlist
-OutputName20=WireList Netlist
+OutputType20=Pcad
+OutputName20=Pcad for PCB
 OutputDocumentPath20=
 OutputVariantName20=
 OutputDefault20=0

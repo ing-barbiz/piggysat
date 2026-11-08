@@ -1,0 +1,368 @@
+{
+    "Modes": [
+        {
+            "name": "Vector Network Analyzer",
+            "settings": {
+                "de-embedding": null,
+                "de-embedding_enabled": false,
+                "markers": [
+                    {
+                        "creationTimestamp": 1787664319,
+                        "formatGraph": [
+                            "dB",
+                            "dB + angle",
+                            "real + imag",
+                            "Impedance",
+                            "VSWR",
+                            "Resistance",
+                            "Capacitance",
+                            "Inductance",
+                            "Quality Factor",
+                            "Group Delay"
+                        ],
+                        "formatTable": "dB + angle",
+                        "maxPosition": 0.0,
+                        "minPosition": 0.0,
+                        "number": 1,
+                        "position": 1575700000.0,
+                        "restrictPosition": false,
+                        "trace": 771454196,
+                        "type": "Manual",
+                        "visible": true
+                    },
+                    {
+                        "creationTimestamp": 1787664322,
+                        "formatGraph": [
+                            "dB",
+                            "dB + angle",
+                            "real + imag",
+                            "Impedance",
+                            "VSWR",
+                            "Resistance",
+                            "Capacitance",
+                            "Inductance",
+                            "Quality Factor",
+                            "Group Delay"
+                        ],
+                        "formatTable": "dB + angle",
+                        "maxPosition": 0.0,
+                        "minPosition": 0.0,
+                        "number": 2,
+                        "position": 1540000000.0,
+                        "restrictPosition": false,
+                        "trace": 771454196,
+                        "type": "Manual",
+                        "visible": true
+                    },
+                    {
+                        "creationTimestamp": 1787664322,
+                        "formatGraph": [
+                            "dB",
+                            "dB + angle",
+                            "real + imag",
+                            "Impedance",
+                            "VSWR",
+                            "Resistance",
+                            "Capacitance",
+                            "Inductance",
+                            "Quality Factor",
+                            "Group Delay"
+                        ],
+                        "formatTable": "dB + angle",
+                        "maxPosition": 0.0,
+                        "minPosition": 0.0,
+                        "number": 3,
+                        "position": 1640200000.0,
+                        "restrictPosition": false,
+                        "trace": 771454196,
+                        "type": "Manual",
+                        "visible": true
+                    }
+                ],
+                "sweep": {
+                    "IFBW": 1000.0,
+                    "averages": 1,
+                    "dwellTime": 0.0,
+                    "frequency": {
+                        "log": false,
+                        "power": -10.0,
+                        "start": 1400000000.0,
+                        "stop": 1700000000.0
+                    },
+                    "points": 501,
+                    "power": {
+                        "frequency": 1000000000.0,
+                        "start": -30.0,
+                        "stop": -10.0
+                    },
+                    "single": false,
+                    "type": "Frequency"
+                },
+                "tiles": {
+                    "orientation": "horizontal",
+                    "sizes": [
+                        877,
+                        877
+                    ],
+                    "split": true,
+                    "tile1": {
+                        "plot": "smithchart",
+                        "plotsettings": {
+                            "Z0": 50.0,
+                            "constantLines": null,
+                            "cursorFormat": "real + imag",
+                            "edge_reflection": 1.0,
+                            "frequency_override": false,
+                            "limit_to_edge": true,
+                            "limit_to_span": true,
+                            "offset_axis_x": 0.0,
+                            "offset_axis_y": 0.0,
+                            "override_max": 6000000000.0,
+                            "override_min": 0.0,
+                            "title": "",
+                            "traces": [
+                                771454196
+                            ]
+                        },
+                        "split": false
+                    },
+                    "tile2": {
+                        "plot": "XY-plot",
+                        "plotsettings": {
+                            "XAxis": {
+                                "autoDivs": true,
+                                "divs": 15,
+                                "log": false,
+                                "max": 1700000000.0,
+                                "min": 1400000000.0,
+                                "mode": "Use Span",
+                                "type": "Frequency"
+                            },
+                            "YPrimary": {
+                                "autoDivs": true,
+                                "autorange": false,
+                                "divs": 14,
+                                "log": false,
+                                "max": 20.0,
+                                "min": -120.0,
+                                "traces": [
+                                    771454196
+                                ],
+                                "type": "Magnitude"
+                            },
+                            "YSecondary": {
+                                "autoDivs": true,
+                                "autorange": false,
+                                "divs": 18,
+                                "log": false,
+                                "max": 180.0,
+                                "min": -180.0,
+                                "traces": [
+                                    771454196
+                                ],
+                                "type": "Phase"
+                            },
+                            "limitLines": null,
+                            "title": ""
+                        },
+                        "split": false
+                    }
+                },
+                "traces": [
+                    {
+                        "color": "#ffff00",
+                        "deembeddingActive": false,
+                        "deembeddingData": null,
+                        "hash": 771454196,
+                        "livetype": 0,
+                        "math": null,
+                        "math_enabled": false,
+                        "name": "S11",
+                        "parameter": "S11",
+                        "paused": false,
+                        "referenceImpedance": 50.0,
+                        "reflection": true,
+                        "type": "Live",
+                        "velocityFactor": 0.66,
+                        "visible": true
+                    },
+                    {
+                        "color": "#0000ff",
+                        "deembeddingActive": false,
+                        "deembeddingData": null,
+                        "hash": 192532091,
+                        "livetype": 0,
+                        "math": null,
+                        "math_enabled": false,
+                        "name": "S12",
+                        "parameter": "S12",
+                        "paused": false,
+                        "referenceImpedance": 50.0,
+                        "reflection": false,
+                        "type": "Live",
+                        "velocityFactor": 0.66,
+                        "visible": false
+                    },
+                    {
+                        "color": "#00ff00",
+                        "deembeddingActive": false,
+                        "deembeddingData": null,
+                        "hash": 267213078,
+                        "livetype": 0,
+                        "math": null,
+                        "math_enabled": false,
+                        "name": "S21",
+                        "parameter": "S21",
+                        "paused": false,
+                        "referenceImpedance": 50.0,
+                        "reflection": false,
+                        "type": "Live",
+                        "velocityFactor": 0.66,
+                        "visible": false
+                    },
+                    {
+                        "color": "#ff0000",
+                        "deembeddingActive": false,
+                        "deembeddingData": null,
+                        "hash": 2591383324,
+                        "livetype": 0,
+                        "math": null,
+                        "math_enabled": false,
+                        "name": "S22",
+                        "parameter": "S22",
+                        "paused": false,
+                        "referenceImpedance": 50.0,
+                        "reflection": true,
+                        "type": "Live",
+                        "velocityFactor": 0.66,
+                        "visible": false
+                    }
+                ]
+            },
+            "type": "Vector Network Analyzer"
+        },
+        {
+            "name": "Signal Generator",
+            "settings": {
+                "frequency": 1000000000.0,
+                "port": 0,
+                "power": -10.0,
+                "sweep": {
+                    "dwell": 1.0,
+                    "enabled": false,
+                    "span": 0.0,
+                    "steps": 100.0
+                }
+            },
+            "type": "Signal Generator"
+        },
+        {
+            "name": "Spectrum Analyzer",
+            "settings": {
+                "markers": null,
+                "sweep": {
+                    "acquisition": {
+                        "RBW": 10000.0,
+                        "detector": "+Peak",
+                        "window": "Kaiser"
+                    },
+                    "averages": 1,
+                    "frequency": {
+                        "start": 950000000.0,
+                        "stop": 1050000000.0
+                    },
+                    "single": false,
+                    "trackingGenerator": {
+                        "enabled": false,
+                        "offset": 0.0,
+                        "port": 1,
+                        "power": -20.0
+                    }
+                },
+                "tiles": {
+                    "plot": "XY-plot",
+                    "plotsettings": {
+                        "XAxis": {
+                            "autoDivs": true,
+                            "divs": 10,
+                            "log": false,
+                            "max": 1050000000.0,
+                            "min": 950000000.0,
+                            "mode": "Use Span",
+                            "type": "Frequency"
+                        },
+                        "YPrimary": {
+                            "autoDivs": false,
+                            "autorange": false,
+                            "divs": 12,
+                            "log": false,
+                            "max": 0.0,
+                            "min": -120.0,
+                            "traces": [
+                                3353567069,
+                                1789750454
+                            ],
+                            "type": "Magnitude"
+                        },
+                        "YSecondary": {
+                            "autoDivs": true,
+                            "autorange": true,
+                            "divs": 0,
+                            "log": false,
+                            "max": 1.0,
+                            "min": -1.0,
+                            "traces": null,
+                            "type": "Disabled"
+                        },
+                        "limitLines": null,
+                        "title": ""
+                    },
+                    "split": false
+                },
+                "traces": [
+                    {
+                        "color": "#ffff00",
+                        "deembeddingActive": false,
+                        "deembeddingData": null,
+                        "hash": 1789750454,
+                        "livetype": 0,
+                        "math": null,
+                        "math_enabled": false,
+                        "name": "PORT1",
+                        "parameter": "PORT1",
+                        "paused": false,
+                        "referenceImpedance": 50.0,
+                        "reflection": false,
+                        "type": "Live",
+                        "velocityFactor": 0.66,
+                        "visible": true
+                    },
+                    {
+                        "color": "#0000ff",
+                        "deembeddingActive": false,
+                        "deembeddingData": null,
+                        "hash": 3353567069,
+                        "livetype": 0,
+                        "math": null,
+                        "math_enabled": false,
+                        "name": "PORT2",
+                        "parameter": "PORT2",
+                        "paused": false,
+                        "referenceImpedance": 50.0,
+                        "reflection": false,
+                        "type": "Live",
+                        "velocityFactor": 0.66,
+                        "visible": true
+                    }
+                ]
+            },
+            "type": "Spectrum Analyzer"
+        }
+    ],
+    "Reference": {
+        "Mode": "Internal",
+        "Output": "Off"
+    },
+    "activeMode": "Vector Network Analyzer",
+    "version": "1.6.5-5fee370d4"
+}

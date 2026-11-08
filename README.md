@@ -101,12 +101,53 @@ The enclosure is designed to support an IP68 submersible implementation. The fin
 
 ## Measurements and simulations
 
-`Measurements/` contains vector network analyzer data for the antenna and its matching network:
+`Measurements/` contains S11 measurements of the antenna board, taken with a LibreVNA:
 
-- `s11_*.s1p` — 50 Ω Touchstone S11 measurements, one file per tested configuration
+- `s11_*.s1p` — 50 Ω Touchstone S11 data, one file per configuration (see the table below)
 - `OSL_1_1_40G-1_70G_501pt.cal` — open/short/load calibration, 1.40–1.70 GHz, 501 points
-- `s11.setup` — instrument setup used for the measurements
+- `s11.setup` — LibreVNA setup: 1.40–1.70 GHz, 501 points, 1 kHz IF bandwidth, −10 dBm
 - `pic*.jpg` — photos of the antenna board on the measurement setup
+
+<table>
+  <tr>
+    <td align="center"><img src="Measurements/pic4.jpg" alt="Antenna board without the cap, connected to the LibreVNA" width="300"><br>Antenna board without the cap</td>
+    <td align="center"><img src="Measurements/pic2.jpg" alt="Antenna board with the plastic cap fitted, measured at the SMB connector" width="300"><br>Antenna board with the plastic cap fitted</td>
+  </tr>
+</table>
+
+The measurements follow the antenna from a single bare feed to the complete board. Single-feed measurements were taken with the other three feeds terminated in 50 Ω. Each matching network is a 2.2 pF series capacitor followed by a shunt inductor.
+
+| File | Configuration |
+| --- | --- |
+| `s11_uncomp.s1p` | One antenna feed, no matching network |
+| `s11_comp_2p2_8n0.s1p` | One antenna feed, matched with 2.2 pF and 8.2 nH |
+| `s11_combiner.s1p` | All four feeds matched with 2.2 pF and 8.2 nH, measured at the combiner, without the RF switch |
+| `s11_comp_2p2_8n0_combiner_smb.s1p` | Full antenna board at the LTE SMB connector, RF switch bypassed to LTE |
+| `s11_comp_2p2_8n0_combiner_switch_smb.s1p` | Full antenna board at the LTE SMB connector, RF switch powered and set to LTE |
+| **`s11_full_cap.s1p`** | **Final configuration:** full antenna board matched with 2.2 pF and 6.8 nH, plastic cap fitted, at the LTE SMB connector, RF switch powered and set to LTE |
+| `s11_line.s1p` | Check of one stripline terminated in 50 Ω (1.525–1.675 GHz sweep) |
+
+The plots show the LibreVNA markers saved in `s11.setup`: M1 at 1575.7 MHz (GPS L1), M2 at 1540.0 MHz (NTN downlink), and M3 at 1640.2 MHz (NTN uplink). The yellow area is the GNSS L1 band (1559–1610 MHz, covering GPS L1, Galileo E1 and BeiDou B1), and the grey areas are the NTN downlink and uplink bands.
+
+![S11 of a single antenna feed](Pictures/s11-single-feed.svg)
+
+![S11 of the four feeds combined](Pictures/s11-combined.svg)
+
+![S11 of the full antenna board with and without the cap](Pictures/s11-final.svg)
+
+Measured S11 in dB, worst case within each band:
+
+| File | GNSS L1 (1559–1610 MHz) | NTN downlink (1525–1559 MHz) | NTN uplink (1626.5–1660.5 MHz) |
+| --- | ---: | ---: | ---: |
+| `s11_uncomp.s1p` | −9.8 | −14.2 | −7.6 |
+| `s11_comp_2p2_8n0.s1p` | −10.4 | −12.9 | −6.6 |
+| `s11_combiner.s1p` | −19.2 | −22.5 | −13.2 |
+| `s11_comp_2p2_8n0_combiner_smb.s1p` | −13.3 | −12.8 | −15.5 |
+| `s11_comp_2p2_8n0_combiner_switch_smb.s1p` | −14.6 | −12.7 | −26.5 |
+| **`s11_full_cap.s1p` (final)** | **−15.1** | **−16.2** | **−18.4** |
+| `s11_line.s1p` | −19.8 | −21.7 | −18.3 |
+
+The NTN ranges are those of 3GPP band 255. All board-level measurements were taken at the LTE SMB connector; the GNSS path through the LNA was not measured.
 
 `Simulations/` contains the uSimmics models of the matching network (`piggysat.sch`) and their results (`piggysat.dat`). The measured `.s1p` files can be loaded into the simulations for comparison.
 

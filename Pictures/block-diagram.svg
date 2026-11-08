@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640" role="img" aria-label="PiggySat block diagram">
+  <title>PiggySat block diagram</title>
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; fill: #1b2420; }
+    .board { fill: #f2f8f4; stroke: #2f7a55; stroke-width: 1.5; }
+    .btitle { font-size: 16px; font-weight: 600; fill: #2f7a55; }
+    .blk { fill: #ffffff; stroke: #1b2420; stroke-width: 1.2; }
+    .soc { fill: #ffffff; stroke: #1b2420; stroke-width: 2; }
+    .match { fill: #ffffff; stroke: #b5621c; stroke-width: 1.2; stroke-dasharray: 4 3; }
+    .t { font-size: 13px; font-weight: 600; }
+    .big { font-size: 18px; font-weight: 600; }
+    .pn { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 11px; fill: #5a6962; }
+    .pin { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 10.5px; fill: #5a6962; }
+    .rf { stroke: #b5621c; stroke-width: 2.6; fill: none; }
+    .pw { stroke: #c0392f; stroke-width: 2; fill: none; }
+    .dg { stroke: #36536f; stroke-width: 1.6; fill: none; }
+    .lrf { font-size: 12px; font-weight: 600; fill: #b5621c; }
+    .lpw { font-size: 12px; font-weight: 600; fill: #c0392f; }
+    .ldg { font-size: 12px; font-weight: 600; fill: #36536f; }
+    .leg { font-size: 12px; fill: #5a6962; }
+  </style>
+
+  <rect x="0" y="0" width="1000" height="640" fill="#ffffff"/>
+
+  <!-- Boards -->
+  <rect class="board" x="16" y="16" width="560" height="560" rx="10"/>
+  <text class="btitle" x="34" y="44">PiggySat-board</text>
+  <rect class="board" x="656" y="16" width="328" height="560" rx="10"/>
+  <text class="btitle" x="674" y="44">PiggySat-antenna</text>
+
+  <!-- Power chain -->
+  <rect class="blk" x="36" y="84" width="160" height="48" rx="5"/>
+  <text class="t" x="48" y="104">Battery</text>
+  <text class="pn" x="48" y="122">Keystone 1095</text>
+  <line class="pw" x1="116" y1="132" x2="116" y2="156"/>
+
+  <rect class="blk" x="36" y="156" width="160" height="48" rx="5"/>
+  <text class="t" x="48" y="176">PTC fuse</text>
+  <text class="pn" x="48" y="194">MF-PSMF075X</text>
+  <line class="pw" x1="116" y1="204" x2="116" y2="228"/>
+
+  <rect class="blk" x="36" y="228" width="160" height="48" rx="5"/>
+  <text class="t" x="48" y="248">Polarity protection</text>
+  <text class="pn" x="48" y="266">DMP2123L</text>
+
+  <line class="pw" x1="116" y1="276" x2="116" y2="372"/>
+  <circle cx="116" cy="320" r="3.5" fill="#c0392f"/>
+  <line class="pw" x1="116" y1="320" x2="250" y2="320"/>
+  <text class="lpw" x="128" y="312">Vbat</text>
+
+  <rect class="blk" x="36" y="372" width="160" height="48" rx="5"/>
+  <text class="t" x="48" y="392">LDO 3.0 V</text>
+  <text class="pn" x="48" y="410">ADP160</text>
+  <line class="pw" x1="196" y1="396" x2="250" y2="396"/>
+  <text class="lpw" x="204" y="388">3Vcc</text>
+
+  <!-- 3Vcc to antenna board -->
+  <polyline class="pw" points="116,420 116,556 700,556"/>
+  <text class="lpw" x="128" y="548">3Vcc</text>
+  <text class="lpw" x="706" y="560">→ LNA, RF switch</text>
+
+  <!-- nRF9151 -->
+  <rect class="soc" x="250" y="84" width="150" height="450" rx="6"/>
+  <text class="big" x="262" y="112">nRF9151</text>
+  <text class="pn" x="262" y="130">NB-IoT NTN</text>
+  <text class="pn" x="262" y="145">+ GNSS</text>
+  <text class="pin" x="258" y="324">VBAT</text>
+  <text class="pin" x="258" y="400">VIO</text>
+
+  <!-- RF and control to antenna board -->
+  <line class="rf" x1="400" y1="110" x2="850" y2="110"/>
+  <line class="rf" x1="400" y1="170" x2="720" y2="170"/>
+  <polyline class="dg" points="400,250 875,250 875,180"/>
+  <text class="lrf" x="616" y="102" text-anchor="middle">LTE</text>
+  <text class="lrf" x="616" y="162" text-anchor="middle">GNSS</text>
+  <text class="ldg" x="490" y="242" text-anchor="middle">SW (0 = LTE, 1 = GNSS)</text>
+
+  <!-- Peripherals -->
+  <line class="dg" x1="400" y1="294" x2="432" y2="294"/>
+  <line class="dg" x1="400" y1="350" x2="432" y2="350"/>
+  <line class="dg" x1="400" y1="406" x2="432" y2="406"/>
+  <line class="dg" x1="400" y1="462" x2="432" y2="462"/>
+  <line class="dg" x1="400" y1="518" x2="432" y2="518"/>
+
+  <rect class="blk" x="432" y="274" width="128" height="40" rx="5"/>
+  <text class="t" x="444" y="291">Status LEDs</text>
+  <text class="pn" x="444" y="306">red/orange/green</text>
+
+  <rect class="blk" x="432" y="330" width="128" height="40" rx="5"/>
+  <text class="t" x="444" y="347">Magnetic sensor</text>
+  <text class="pn" x="444" y="362">TMR1304S</text>
+
+  <rect class="blk" x="432" y="386" width="128" height="40" rx="5"/>
+  <text class="t" x="444" y="411">SIM card</text>
+
+  <rect class="blk" x="432" y="442" width="128" height="40" rx="5"/>
+  <text class="t" x="444" y="467">SWD debug</text>
+
+  <rect class="blk" x="432" y="498" width="128" height="40" rx="5"/>
+  <text class="t" x="444" y="523">Reset button</text>
+
+  <!-- Antenna board: RF switch and LNA -->
+  <!-- RF switch drawn as a 2:1 multiplexer -->
+  <polygon class="blk" points="850,84 900,112 900,168 850,196" stroke-linejoin="round"/>
+  <text class="pin" x="856" y="114">0</text>
+  <text class="pin" x="856" y="174">1</text>
+  <text class="t" x="866" y="218" text-anchor="end">RF switch</text>
+  <text class="pn" x="866" y="233" text-anchor="end">RFSW6024</text>
+
+  <!-- GNSS LNA drawn as an amplifier -->
+  <polygon class="blk" points="720,170 780,142 780,198" stroke-linejoin="round"/>
+  <line class="rf" x1="780" y1="170" x2="850" y2="170"/>
+  <text class="t" x="750" y="218" text-anchor="middle">GNSS LNA</text>
+  <text class="pn" x="750" y="233" text-anchor="middle">SKY65723-81</text>
+
+  <!-- Switch common to splitter -->
+  <polyline class="rf" points="900,140 930,140 930,256 835,256 835,280"/>
+
+  <!-- 4-way 90° power divider symbol -->
+  <circle class="blk" cx="835" cy="306" r="26"/>
+  <g stroke="#1b2420" stroke-width="1.4" fill="none" stroke-linecap="round">
+    <line x1="835" y1="280" x2="835" y2="300"/>
+    <line x1="835" y1="300" x2="816.6" y2="324.4"/>
+    <line x1="835" y1="300" x2="826.1" y2="330.4"/>
+    <line x1="835" y1="300" x2="843.9" y2="330.4"/>
+    <line x1="835" y1="300" x2="853.4" y2="324.4"/>
+  </g>
+  <circle cx="835" cy="300" r="2.5" fill="#1b2420"/>
+  <text class="t" x="800" y="286" text-anchor="end">4-way 90°</text>
+  <text class="t" x="800" y="301" text-anchor="end">power divider</text>
+  <text class="pn" x="800" y="316" text-anchor="end">WP4GA+</text>
+
+  <polyline class="rf" points="816.6,324.4 725,352 725,372"/>
+  <polyline class="rf" points="826.1,330.4 800,352 800,372"/>
+  <polyline class="rf" points="843.9,330.4 875,352 875,372"/>
+  <polyline class="rf" points="853.4,324.4 945,352 945,372"/>
+  <text class="pin" x="730" y="366">0°</text>
+  <text class="pin" x="805" y="366">90°</text>
+  <text class="pin" x="880" y="366">180°</text>
+  <text class="pin" x="950" y="366">270°</text>
+
+  <rect class="match" x="690" y="372" width="270" height="48" rx="5"/>
+  <text class="t" x="825" y="392" text-anchor="middle">Matching network ×4</text>
+  <text class="pn" x="825" y="410" text-anchor="middle">series C · shunt L</text>
+
+  <line class="rf" x1="725" y1="420" x2="725" y2="460"/>
+  <line class="rf" x1="800" y1="420" x2="800" y2="460"/>
+  <line class="rf" x1="875" y1="420" x2="875" y2="460"/>
+  <line class="rf" x1="945" y1="420" x2="945" y2="460"/>
+
+  <rect class="blk" x="690" y="460" width="270" height="56" rx="5"/>
+  <text class="t" x="825" y="484" text-anchor="middle">Antenna, 4 feeds</text>
+  <text class="pn" x="825" y="502" text-anchor="middle">9002418L0-L16L</text>
+
+  <!-- Legend -->
+  <line class="rf" x1="34" y1="608" x2="62" y2="608"/>
+  <text class="leg" x="70" y="612">RF</text>
+  <line class="pw" x1="112" y1="608" x2="140" y2="608"/>
+  <text class="leg" x="148" y="612">Power</text>
+  <line class="dg" x1="208" y1="608" x2="236" y2="608"/>
+  <text class="leg" x="244" y="612">Digital</text>
+</svg>

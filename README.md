@@ -4,8 +4,17 @@
 
 [![License: CERN-OHL-P-2.0](https://img.shields.io/badge/license-CERN--OHL--P--2.0-blue.svg)](LICENSE)
 ![Release: v1.0.0](https://img.shields.io/badge/release-v1.0.0-brightgreen.svg)
+[![Firmware: ing-barbiz/piggysat-fw](https://img.shields.io/badge/firmware-ing--barbiz%2Fpiggysat--fw-lightgrey.svg)](https://github.com/ing-barbiz/piggysat-fw)
 
-PiggySat is an emergency communicator that determines its position using GNSS and exchanges data through an LTE NB-IoT satellite link. A Nordic Semiconductor nRF9151 provides both GNSS positioning and bidirectional NB-IoT NTN communications.
+PiggySat is an **open source satellite communicator**: open hardware and open firmware that send short messages with a position directly over satellite, without terrestrial coverage. This repository holds the hardware (schematics, PCB, enclosure); the firmware is in [ing-barbiz/piggysat-fw](https://github.com/ing-barbiz/piggysat-fw).
+
+To the best of our knowledge, PiggySat is the **world's first open source satellite communicator based on NB-IoT NTN**.
+
+It is built on **NB-IoT NTN** (3GPP Release 17), the satellite extension of the cellular IoT standard, instead of a proprietary satellite network. The radio is a standard cellular IoT SiP (Nordic nRF9151) running NTN modem firmware, and connectivity comes from NTN operators with IoT-style data plans. Communicators based on proprietary systems such as Iridium need a dedicated satellite modem and per-message airtime, which makes them considerably more expensive to build and to run.
+
+> **Not an emergency beacon.** PiggySat is not a certified COSPAS-SARSAT PLB/EPIRB and does not alert rescue services: messages go to a server you configure (ThingsBoard). Do not rely on it as your only means of calling for help.
+
+**Project status:** the communicator firmware currently reports the GNSS position periodically and stops while a magnet is on the sensor. SOS messages, delivery confirmation to the user and battery management are not implemented yet.
 
 The hardware is built as an Altium Designer multi-board assembly. It combines a compact nRF9151 radio and power board with a separate four-layer antenna board and includes the mechanical housing, reusable component libraries, and a PCB panel project.
 

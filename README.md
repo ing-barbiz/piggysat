@@ -6,7 +6,7 @@
 ![Release: v1.0.0](https://img.shields.io/badge/release-v1.0.0-brightgreen.svg)
 [![Firmware: ing-barbiz/piggysat-fw](https://img.shields.io/badge/firmware-ing--barbiz%2Fpiggysat--fw-lightgrey.svg)](https://github.com/ing-barbiz/piggysat-fw)
 
-PiggySat is an **open source satellite communicator**: open hardware and open firmware that send short messages with a position directly over satellite, without terrestrial coverage. This repository holds the hardware (schematics, PCB, enclosure); the firmware is in [ing-barbiz/piggysat-fw](https://github.com/ing-barbiz/piggysat-fw).
+PiggySat is an **open source satellite emergency communicator**: open hardware and open firmware that send short messages with a position directly over satellite, without terrestrial coverage. This repository holds the hardware (schematics, PCB, enclosure); the firmware is in [ing-barbiz/piggysat-fw](https://github.com/ing-barbiz/piggysat-fw).
 
 To the best of our knowledge, PiggySat is the **world's first open source satellite communicator based on NB-IoT NTN**.
 

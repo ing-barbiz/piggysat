@@ -1,6 +1,8 @@
-![PiggySat](Pictures/piggysat-comic.svg)
+![PiggySat](Pictures/cover.svg)
 
 # PiggySat
+
+<img src="Logo/piggysat.png" alt="PiggySat logo" width="180">
 
 [![License: CERN-OHL-P-2.0](https://img.shields.io/badge/license-CERN--OHL--P--2.0-blue.svg)](LICENSE)
 ![Release: v1.0.0](https://img.shields.io/badge/release-v1.0.0-brightgreen.svg)
@@ -30,7 +32,7 @@ The design is under active development. Review the schematics, component availab
 - **Location** — the nRF9151 GNSS receiver determines the communicator's position.
 - **Satellite data link** — the nRF9151 uses LTE NB-IoT NTN for transmitting and receiving data over satellite.
 - **Integrated cellular IoT SiP** — a single nRF9151 handles both positioning and communication functions.
-- **Simple user interface** — one touch button and three status LEDs provide direct control and visual feedback.
+- **Simple user interface** — a magnet sensor puts the device in standby, a reset button restarts it, and three status LEDs show GNSS, satellite link and message delivery.
 - **Rugged enclosure** — designed for an IP68 submersible housing suitable for emergency use in wet and exposed environments.
 - **Multi-board construction** — the main electronics and antenna are implemented as separate PCBs and validated together in the Altium multi-board assembly.
 
@@ -55,7 +57,7 @@ The design is under active development. Review the schematics, component availab
 | `Mechanical/` | IP68 housing design (Fusion 360 archive) and STEP models of the housing and PCB assembly |
 | `Measurements/` | VNA S11 measurements of the antenna and matching network, with photos of the test setup |
 | `Simulations/` | uSimmics simulations of the antenna matching network |
-| `Pictures/` | README cover artwork, block diagram, and photos of the device |
+| `Pictures/` | README cover artwork, block diagram, panel render, S11 plots, and photos of the device |
 | `Logo/` | Project artwork (PNG and SVG) |
 
 ## Hardware projects
@@ -133,10 +135,10 @@ The measurements follow the antenna from a single bare feed to the complete boar
 | File | Configuration |
 | --- | --- |
 | `s11_uncomp.s1p` | One antenna feed, no matching network |
-| `s11_comp_2p2_8n0.s1p` | One antenna feed, matched with 2.2 pF and 8.2 nH |
+| `s11_comp_2p2_8n2.s1p` | One antenna feed, matched with 2.2 pF and 8.2 nH |
 | `s11_combiner.s1p` | All four feeds matched with 2.2 pF and 8.2 nH, measured at the combiner, without the RF switch |
-| `s11_comp_2p2_8n0_combiner_smb.s1p` | Full antenna board at the LTE SMB connector, RF switch bypassed to LTE |
-| `s11_comp_2p2_8n0_combiner_switch_smb.s1p` | Full antenna board at the LTE SMB connector, RF switch powered and set to LTE |
+| `s11_comp_2p2_8n2_combiner_smb.s1p` | Full antenna board at the LTE SMB connector, RF switch bypassed to LTE |
+| `s11_comp_2p2_8n2_combiner_switch_smb.s1p` | Full antenna board at the LTE SMB connector, RF switch powered and set to LTE |
 | **`s11_full_cap.s1p`** | **Final configuration:** full antenna board matched with 2.2 pF and 6.8 nH, plastic cap fitted, at the LTE SMB connector, RF switch powered and set to LTE |
 | `s11_line.s1p` | Check of one stripline terminated in 50 Ω (1.525–1.675 GHz sweep) |
 
@@ -153,10 +155,10 @@ Measured S11 in dB, worst case within each band:
 | File | GNSS L1 (1559–1610 MHz) | NTN downlink (1525–1559 MHz) | NTN uplink (1626.5–1660.5 MHz) |
 | --- | ---: | ---: | ---: |
 | `s11_uncomp.s1p` | −9.8 | −14.2 | −7.6 |
-| `s11_comp_2p2_8n0.s1p` | −10.4 | −12.9 | −6.6 |
+| `s11_comp_2p2_8n2.s1p` | −10.4 | −12.9 | −6.6 |
 | `s11_combiner.s1p` | −19.2 | −22.5 | −13.2 |
-| `s11_comp_2p2_8n0_combiner_smb.s1p` | −13.3 | −12.8 | −15.5 |
-| `s11_comp_2p2_8n0_combiner_switch_smb.s1p` | −14.6 | −12.7 | −26.5 |
+| `s11_comp_2p2_8n2_combiner_smb.s1p` | −13.3 | −12.8 | −15.5 |
+| `s11_comp_2p2_8n2_combiner_switch_smb.s1p` | −14.6 | −12.7 | −26.5 |
 | **`s11_full_cap.s1p` (final)** | **−15.1** | **−16.2** | **−18.4** |
 | `s11_line.s1p` | −19.8 | −21.7 | −18.3 |
 
@@ -171,6 +173,7 @@ The NTN ranges are those of 3GPP band 255. All board-level measurements were tak
 - uSimmics for the simulations
 - A Gerber/NC viewer independent of Altium for fabrication-output verification
 - Access to the component datasheets and the intended PCB manufacturer's current capabilities
+
 ## Recommended workflow
 
 1. Compile `PiggySat-lib/PiggySat.LibPkg` and install or relink the resulting integrated library if required.

@@ -32,6 +32,7 @@ The design is under active development. Review the schematics, component availab
 - **Location** — the nRF9151 GNSS receiver determines the communicator's position.
 - **Satellite data link** — the nRF9151 uses LTE NB-IoT NTN for transmitting and receiving data over satellite.
 - **Integrated cellular IoT SiP** — a single nRF9151 handles both positioning and communication functions.
+- **Shared antenna** — one antenna serves both the satellite link and the GNSS receiver, selected by an RF switch, so the device stays compact without the gain loss of two smaller antennas; see [Antenna design](#antenna-design).
 - **Simple user interface** — a magnet sensor puts the device in standby, a reset button restarts it, and three status LEDs show GNSS, satellite link and message delivery.
 - **Rugged enclosure** — designed for an IP68 submersible housing suitable for emergency use in wet and exposed environments.
 - **Multi-board construction** — the main electronics and antenna are implemented as separate PCBs and validated together in the Altium multi-board assembly.
@@ -82,6 +83,12 @@ Open `PiggySat-antenna/PiggySat-antenna.PrjPcb`. Its source documents are:
 - `PiggySat-antenna.OutJob` — fabrication, assembly, and documentation outputs
 
 The routed RF network includes phase/delay constraints for the `0DEG`, `90DEG`, `180DEG`, and `270DEG` nets. Preserve these constraints when changing the antenna feed network or stack-up.
+
+#### Antenna design
+
+A single antenna serves both the LTE NB-IoT NTN link and the GNSS receiver. Its four feeds are combined by the 90° power divider, and an RF switch (SPDT) routes the combined port either to the LTE connector or, through the GNSS LNA, to the GNSS connector. The firmware selects the path with the `SW` line: low for LTE, high for GNSS.
+
+Sharing one antenna keeps the device compact. Two separate antennas in the same space would each have to be smaller, which would reduce their gain. Sharing has no cost in operation, because the two functions are never needed at the same time: each cycle first acquires a GNSS fix, then switches to LTE to send the position.
 
 ### Component library
 

@@ -10,7 +10,7 @@
 
 PiggySat is an **open source satellite emergency communicator**: open hardware and open firmware that send short messages with a position directly over satellite, without terrestrial coverage. This repository holds the hardware (schematics, PCB, enclosure); the firmware is in [ing-barbiz/piggysat-fw](https://github.com/ing-barbiz/piggysat-fw).
 
-To the best of our knowledge, PiggySat is the **world's first open source satellite communicator based on NB-IoT NTN**.
+To the best of our knowledge, PiggySat is the **world's first open source satellite communicator based on NB-IoT NTN** published as a complete device: a full reference design with hardware, firmware and enclosure.
 
 It is built on **NB-IoT NTN** (3GPP Release 17), the satellite extension of the cellular IoT standard, instead of a proprietary satellite network. The radio is a standard cellular IoT SiP (Nordic nRF9151) running NTN modem firmware, and connectivity comes from NTN operators with IoT-style data plans. Communicators based on proprietary systems such as Iridium need a dedicated satellite modem and per-message airtime, which makes them considerably more expensive to build and to run.
 

@@ -13,15 +13,14 @@ First release of the PiggySat hardware project.
 - nRF9151-based emergency communicator hardware for GNSS positioning and bidirectional LTE NB-IoT NTN satellite data
 - main radio and power PCB project
 - separate four-layer antenna PCB and controlled-delay RF feed network
-- Altium multi-board assembly and exported assembly STEP model
+- Altium multi-board assembly
 - reusable schematic and PCB libraries
 - PCB panelization project
 - Fusion 360 and STEP housing models
-- fabrication outputs for the main and antenna boards, including Gerber, NC drill, BOM, pick-and-place, PDF, STEP, and PCB images
+- output jobs for the main board, antenna board, panel and multi-board assembly, which generate the fabrication and documentation data
 - CERN-OHL-P-2.0 license, attribution notice, authorship file, and project documentation
 
 ### Known limitations
 
-- the design remains under active development and has unresolved DRC violations
-- the intended IP68 enclosure rating requires physical validation and does not constitute certification
-- regulatory, RF, environmental, and emergency-use validation are not included in this release
+- no display and no Bluetooth Low Energy link to a phone
+- power consumption needs improvement: the GNSS LNA and the RF switch stay powered between transmissions

@@ -166,14 +166,11 @@ The NTN ranges are those of 3GPP band 255. All board-level measurements were tak
 
 ## Requirements
 
-- Altium Designer with support for PCB, library, and multi-board documents
+- Altium Designer 26
 - Autodesk Fusion 360 for the housing
 - uSimmics for the simulations
 - A Gerber/NC viewer independent of Altium for fabrication-output verification
 - Access to the component datasheets and the intended PCB manufacturer's current capabilities
-
-The exact Altium Designer release used to create the project has not yet been recorded. Before committing edits, open the project in the intended team version and check whether Altium proposes a document-format upgrade.
-
 ## Recommended workflow
 
 1. Compile `PiggySat-lib/PiggySat.LibPkg` and install or relink the resulting integrated library if required.

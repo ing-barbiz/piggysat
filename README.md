@@ -23,7 +23,8 @@ The hardware is built as an Altium Designer multi-board assembly. It combines a 
 The design is under active development. Review the schematics, component availability, RF constraints, and manufacturing data before building hardware.
 
 <p align="center">
-  <img src="Pictures/pic3.jpg" alt="PiggySat main board with the antenna board mounted, next to the open housing" width="420">
+  <img src="Pictures/pic3.jpg" alt="PiggySat main board with the antenna board mounted, next to the open housing" height="420">
+  <img src="Pictures/render.png" alt="3D render of the assembled PiggySat inside the transparent housing" height="420">
 </p>
 
 ## Purpose and architecture

@@ -6,17 +6,18 @@
     .btitle { font-size: 16px; font-weight: 600; fill: #2f7a55; }
     .blk { fill: #ffffff; stroke: #1b2420; stroke-width: 1.2; }
     .soc { fill: #ffffff; stroke: #1b2420; stroke-width: 2; }
-    .match { fill: #ffffff; stroke: #b5621c; stroke-width: 1.2; stroke-dasharray: 4 3; }
+    .match { fill: #ffffff; stroke: #2a78d6; stroke-width: 1.2; stroke-dasharray: 4 3; }
+    .dg { stroke-dasharray: none; }
     .t { font-size: 13px; font-weight: 600; }
     .big { font-size: 18px; font-weight: 600; }
     .pn { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 11px; fill: #5a6962; }
     .pin { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 10.5px; fill: #5a6962; }
-    .rf { stroke: #b5621c; stroke-width: 2.6; fill: none; }
-    .pw { stroke: #c0392f; stroke-width: 2; fill: none; }
-    .dg { stroke: #36536f; stroke-width: 1.6; fill: none; }
-    .lrf { font-size: 12px; font-weight: 600; fill: #b5621c; }
-    .lpw { font-size: 12px; font-weight: 600; fill: #c0392f; }
-    .ldg { font-size: 12px; font-weight: 600; fill: #36536f; }
+    .rf { stroke: #2a78d6; stroke-width: 2.6; fill: none; }
+    .pw { stroke: #d1343a; stroke-width: 2; fill: none; }
+    .dg { stroke: #1a9e6a; stroke-width: 1.6; fill: none; }
+    .lrf { font-size: 12px; font-weight: 600; fill: #2a78d6; }
+    .lpw { font-size: 12px; font-weight: 600; fill: #d1343a; }
+    .ldg { font-size: 12px; font-weight: 600; fill: #1a9e6a; }
     .leg { font-size: 12px; fill: #5a6962; }
   </style>
 
@@ -44,7 +45,7 @@
   <text class="pn" x="48" y="266">DMP2123L</text>
 
   <line class="pw" x1="116" y1="276" x2="116" y2="372"/>
-  <circle cx="116" cy="320" r="3.5" fill="#c0392f"/>
+  <circle cx="116" cy="320" r="3.5" fill="#d1343a"/>
   <line class="pw" x1="116" y1="320" x2="250" y2="320"/>
   <text class="lpw" x="128" y="312">Vbat</text>
 
@@ -116,7 +117,7 @@
   <!-- Switch common to splitter -->
   <polyline class="rf" points="900,140 930,140 930,256 835,256 835,280"/>
 
-  <!-- 4-way 90° power divider symbol -->
+  <!-- symmetric 4-way power divider symbol -->
   <circle class="blk" cx="835" cy="306" r="26"/>
   <g stroke="#1b2420" stroke-width="1.4" fill="none" stroke-linecap="round">
     <line x1="835" y1="280" x2="835" y2="300"/>
@@ -126,31 +127,40 @@
     <line x1="835" y1="300" x2="853.4" y2="324.4"/>
   </g>
   <circle cx="835" cy="300" r="2.5" fill="#1b2420"/>
-  <text class="t" x="800" y="286" text-anchor="end">4-way 90°</text>
+  <text class="t" x="800" y="286" text-anchor="end">4-way</text>
   <text class="t" x="800" y="301" text-anchor="end">power divider</text>
   <text class="pn" x="800" y="316" text-anchor="end">WP4GA+</text>
 
-  <polyline class="rf" points="816.6,324.4 725,352 725,372"/>
-  <polyline class="rf" points="826.1,330.4 800,352 800,372"/>
-  <polyline class="rf" points="843.9,330.4 875,352 875,372"/>
-  <polyline class="rf" points="853.4,324.4 945,352 945,372"/>
-  <text class="pin" x="730" y="366">0°</text>
-  <text class="pin" x="805" y="366">90°</text>
-  <text class="pin" x="880" y="366">180°</text>
-  <text class="pin" x="950" y="366">270°</text>
+  <polyline class="rf" points="816.6,324.4 725,338 725,350"/>
+  <polyline class="rf" points="826.1,330.4 800,340 800,350"/>
+  <polyline class="rf" points="843.9,330.4 875,340 875,350"/>
+  <polyline class="rf" points="853.4,324.4 945,338 945,350"/>
 
-  <rect class="match" x="690" y="372" width="270" height="48" rx="5"/>
-  <text class="t" x="825" y="392" text-anchor="middle">Matching network ×4</text>
-  <text class="pn" x="825" y="410" text-anchor="middle">series C · shunt L</text>
+  <rect class="match" x="690" y="350" width="270" height="40" rx="5"/>
+  <text class="t" x="825" y="367" text-anchor="middle">Delay lines ×4</text>
+  <text class="pn" x="825" y="383" text-anchor="middle">phase offset per feed</text>
 
-  <line class="rf" x1="725" y1="420" x2="725" y2="460"/>
-  <line class="rf" x1="800" y1="420" x2="800" y2="460"/>
-  <line class="rf" x1="875" y1="420" x2="875" y2="460"/>
-  <line class="rf" x1="945" y1="420" x2="945" y2="460"/>
+  <line class="rf" x1="725" y1="390" x2="725" y2="406"/>
+  <line class="rf" x1="800" y1="390" x2="800" y2="406"/>
+  <line class="rf" x1="875" y1="390" x2="875" y2="406"/>
+  <line class="rf" x1="945" y1="390" x2="945" y2="406"/>
+  <text class="pin" x="730" y="402">0°</text>
+  <text class="pin" x="805" y="402">90°</text>
+  <text class="pin" x="880" y="402">180°</text>
+  <text class="pin" x="950" y="402">270°</text>
 
-  <rect class="blk" x="690" y="460" width="270" height="56" rx="5"/>
-  <text class="t" x="825" y="484" text-anchor="middle">Antenna, 4 feeds</text>
-  <text class="pn" x="825" y="502" text-anchor="middle">9002418L0-L16L</text>
+  <rect class="match" x="690" y="406" width="270" height="40" rx="5"/>
+  <text class="t" x="825" y="423" text-anchor="middle">Matching network ×4</text>
+  <text class="pn" x="825" y="439" text-anchor="middle">series C · shunt L</text>
+
+  <line class="rf" x1="725" y1="446" x2="725" y2="466"/>
+  <line class="rf" x1="800" y1="446" x2="800" y2="466"/>
+  <line class="rf" x1="875" y1="446" x2="875" y2="466"/>
+  <line class="rf" x1="945" y1="446" x2="945" y2="466"/>
+
+  <rect class="blk" x="690" y="466" width="270" height="52" rx="5"/>
+  <text class="t" x="825" y="488" text-anchor="middle">Antenna, 4 feeds</text>
+  <text class="pn" x="825" y="505" text-anchor="middle">9002418L0-L16L</text>
 
   <!-- Legend -->
   <line class="rf" x1="34" y1="608" x2="62" y2="608"/>

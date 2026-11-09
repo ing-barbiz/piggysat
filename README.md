@@ -89,7 +89,7 @@ The routed RF network includes phase/delay constraints for the `0DEG`, `90DEG`, 
 
 #### Antenna design
 
-A single antenna serves both the LTE NB-IoT NTN link and the GNSS receiver. Its four feeds are combined by the 90° power divider, and an RF switch (SPDT) routes the combined port either to the LTE connector or, through the GNSS LNA, to the GNSS connector. The firmware selects the path with the `SW` line: low for LTE, high for GNSS.
+A single antenna serves both the LTE NB-IoT NTN link and the GNSS receiver. Its four feeds go through delay lines, which set their 0°, 90°, 180° and 270° phase offsets, and are combined by a symmetric 4-way power divider. An RF switch (SPDT) then routes the combined port either to the LTE connector or, through the GNSS LNA, to the GNSS connector. The firmware selects the path with the `SW` line: low for LTE, high for GNSS.
 
 Sharing one antenna keeps the device compact. Two separate antennas in the same space would each have to be smaller, which would reduce their gain. Sharing has no cost in operation, because the two functions are never needed at the same time: each cycle first acquires a GNSS fix, then switches to LTE to send the position.
 

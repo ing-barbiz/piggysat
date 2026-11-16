@@ -20,7 +20,7 @@ Pac P1 1 60 190 18 -26 0 "1"1"50 Ω"1"0 dBm"0"1 GHz"0"26.85"0"con_2"0
 GND * 1 310 220 0 0 0
 .SP SP1 1 70 320 0 10 0 "lin"1"1.4 GHz"1"1.70 GHz"1"500"1"no"1"1"0"2"0"none"0
 C C1 1 180 160 -26 17 0 "2.2 pF"1"0"0""0"neutral"0"SMD0603"0
-SPfile X1 1 420 160 -26 -59 0 "G:/My Drive/Progetti/PiggySat/Measurements/s11_uncomp.s1p"1"1"0"polar"0"linear"0"short"0"none"0"block"0"SOT23"0
+SPfile X1 1 420 160 -26 -59 0 "../Measurements/s11_uncomp.s1p"1"1"0"polar"0"linear"0"short"0"none"0"block"0"SOT23"0
 L L1 1 310 190 -75 -26 3 "6.8 nH"1"0"0""0"inductor_1mH"0
 </Components>
 <Wires>
